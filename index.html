@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>QAQ</title>
+<meta charset="utf-8">
+<title>布希透德雪雪QAQ</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
 </head>
 <body>
-	hello xiaoxue!
+
+	<div id="banner">
+		<div id="carousel">
+			<img src="images/1.jpg" data-url="#">
+			<img src="images/2.jpg" data-url="#">
+			<img src="images/3.jpg" data-url="#">
+			<img src="images/4.jpg" data-url="#">
+			<img src="images/5.jpg" data-url="#">
+			<img src="images/6.jpg" data-url="#">
+			<img src="images/7.jpg" data-url="#">
+			<img src="images/8.jpg" data-url="#">
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(function() {
+			$('#carousel').carousel({
+				curDisplay: 0, //默认索引
+				autoPlay: true, //是否自动播放
+				interval: 3000 //间隔时间
+			});
+		});
+	</script>
 </body>
-</html>
+</html>
